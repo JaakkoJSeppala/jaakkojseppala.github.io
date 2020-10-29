@@ -1,5 +1,5 @@
 body {
-  hyphens:auto
+  hyphens:auto;
 }
 img {
   margin: auto;
@@ -26,7 +26,7 @@ p.rekisteri {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   white-space: pre-wrap;
-  word-wrap: break-word;
+  word-wrap: normal;
   text-align: justify;
 }
 .img {
