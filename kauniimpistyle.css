@@ -6,6 +6,7 @@ img {
   width: 33%;
   height: auto;
   display: block;
+  border-radius: 50%;
 }
 .container {
   width: 100%;
