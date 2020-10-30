@@ -37,7 +37,7 @@ p.rekisteri {
 }
 h1 {
   font: italic bold 32px/64px Georgia, serif;
-  text-shadow: 4px -8px 3px rgba(150, 150, 150, 0.6);
+/*  text-shadow: 4px -8px 3px rgba(150, 150, 150, 0.6);*/
   text-align: center;
 }
 ul {font-family: Arial, Helvetica, sans-serif;
