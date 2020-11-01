@@ -1,332 +1,155 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="keywords"
-      content="Matematiikka, Matematiikan opetus, Tilastotiede, Java, Python, Matematiikan opetus Kuopio"
-    />
-    <style>
-      body {
-        hyphens: auto;
-      }
-
-      header {
-        background: url("me.jpg") no-repeat center;
-                height: 350px;
-        width: auto;
-      }
-      /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-      #hero {
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-        position: relative;
-      }
-
-      #hero .hero-container {
-        position: absolute;
-        bottom: 0;
-        background: rgba(127, 127, 127, 0);
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0 15px;
-      }
-
-      #hero h1 {
-        margin: 0 0 10px 0;
-        font-size: 20px;
-        font-family: "Satisfy", serif;
-        color: black;
-      }
-
-      #hero h2 {
-        color: black;
-        margin-bottom: 50px;
-        font-size: 17px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font: italic bold 16px/32px Georgia, serif;
-        text-shadow: 4px -8px 3px rgba(150, 150, 150, 0.6);
-      }
-
-      #hero .btn-scroll {
-        transition: 0.4s;
-        color: rgba(255, 255, 255, 0.6);
-        animation: up-down 1s ease-in-out infinite alternate-reverse both;
-      }
-
-      #hero .btn-scroll i {
-        font-size: 48px;
-      }
-
-      #hero .btn-scroll:hover {
-        color: #ffb727;
-      }
-
-      @media (min-width: 1024px) {
-        #hero {
-          background-attachment: fixed;
-        }
-      }
-
-      @media (max-width: 575px) {
-        #hero h1 {
-          font-size: 40px;
-        }
-        #hero h2 {
-          text-align: center;
-          margin-bottom: 30px;
-        }
-      }
-
-      @-webkit-keyframes up-down {
-        0% {
-          transform: translateY(5px);
-        }
-        100% {
-          transform: translateY(-5px);
-        }
-      }
-
-      @keyframes up-down {
-        0% {
-          transform: translateY(5px);
-        }
-        100% {
-          transform: translateY(-5px);
-        }
-      }
-
-      p,
-      li {
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-        font-size: 22px;
-        letter-spacing: 1.2px;
-        word-spacing: -1px;
-        color: #000000;
-        font-weight: normal;
-        text-decoration: none;
-        font-style: italic;
-        font-variant: normal;
-        text-transform: none;
-      }
-
-      h1 {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 1em;
-        text-align: center;
-      }
-      img {
-  margin: auto;
-  width: 33%;
-  height: auto;
-  display: block;
-}
-    </style>
+    <link rel="stylesheet" href="kauniimpistyle.css" />
     <title>Jaakko Seppälän kotisivu</title>
   </head>
   <body>
-    <header></header>
-    <section id="hero">
-      <div class="hero.container">
-        <h1>Kiitos kun tulit sivuilleni</h1>
-                <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-          Töistäni saamani palaute
-        </h2>
-        <div id="temp3" style="margin-left: 10%; margin-right: 10%">
-          <ul>
-            <li>Reipas, tunnollinen ja ahkera.</li>
-            <li>
-              Jaakko Seppälä on hoitanut tehtävänsä ahkerasti ja tunnollisesti.
-              Hänen ohjelmoimansa sovellukset palvelevat osaltaan koko
-              arkistolaitoksen toimintaa. Uuden tietotekniset haasteet hän on
-              kohdannut rauhallisesti osoittaen kykynsä oppia uusia asioita.
-              Jaakko Seppälän yhteistyökyky on ollut erinomainen.
-            </li>
-            <li style="hyphens: auto">
-              Jaakko Seppälä hoiti tehtävänsä sitoutuneesti, huolellisesti ja
-              ammattitaitoisesti. Hän neuvoi oppilastaan perusteellisesti ja
-              selkeästi. Voin lämpimästi suositella häntä vastaaviin tehtäviin.
-            </li>
-            <li style="hyphens: auto">
-              Jaakko Seppälän kannustavan ja erinomaisen opetuksen ansiosta
-              oppilas sai paremman "otteen" aineesta ja sai hyvän arvosanan
-              kevään todistukseensa.
-            </li>
-            <li style="hyphens: auto">
-              Jaakko Seppälä opetti asiat selkeästi ja ymmärrettävästi ja hänen
-              kanssaan oli helppo työskennellä. Suoritin lyhyen matematiikan
-              oppimäärän yo-kirjoituksissa hyväksytyin arvosanoin. Voin
-              suositella häntä vastaavanlaisiin opetustehtäviin.
-            </li>
-          </ul>
+    <div class="container">
+      <p class="otsikko">
+        FM Jaakko Seppälä, kuopiolainen matemaatikko, opettaja ja
+        junioritason ohjelmoija
+      </p>
+    </div>
+    <h1>Kiitos kun tulit sivulleni!</h1>
+    <img src="me.jpg" alt="">
+    <h1>Töistäni saama palaute</h1>
+    <ul>
+      <li>
+        <blockquote>"Reipas, tunnollinen ja ahkera."</blockquote>
+      </li>
+      <li>
+        <blockquote>
+          "Jaakko Seppälä on hoitanut tehtävänsä ahkerasti ja tunnollisesti.
+          Hänen ohjelmoimansa sovellukset palvelevat osaltaan koko
+          arkistolaitoksen toimintaa. Uuden tietotekniset haasteet hän on
+          kohdannut rauhallisesti osoittaen kykynsä oppia uusia asioita. Jaakko
+          Seppälän yhteistyökyky on ollut erinomainen."
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          "Jaakko Seppälä hoiti tehtävänsä sitoutuneesti, huolellisesti ja
+          ammattitaitoisesti. Hän neuvoi oppilastaan perusteellisesti ja
+          selkeästi. Voin lämpimästi suositella häntä vastaaviin tehtäviin."
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          "Jaakko Seppälän kannustavan ja erinomaisen opetuksen ansiosta oppilas
+          sai paremman 'otteen' aineesta ja sai hyvän arvosanan kevään
+          todistukseensa."
+        </blockquote>
+      </li>
+      <li>
+        <blockquote>
+          "Jaakko Seppälä opetti asiat selkeästi ja ymmärrettävästi ja hänen
+          kanssaan oli helppo työskennellä. Suoritin lyhyen matematiikan
+          oppimäärän yo-kirjoituksissa hyväksytyin arvosanoin. Voin suositella
+          häntä vastaavanlaisiin opetustehtäviin."
+        </blockquote>
+      </li>
+    </ul>
+    <h1>Minusta</h1>
+    <p>
+      Olen Jaakko Seppälä, Kuopiossa asuva, syntyperäinen helsinkiläinen
+      matemaatikko ja junioritason ohjelmoija. Tarjoan yksityisopetusta ja 
+      konsultointipalveluja. Valmistuin Helsingin yliopiston
+      matemaattis-luonnontieteellisestä tiedekunnasta filosofian maisteriksi
+      vuonna 2009.
+    </p>
+    <p
+    >
+      Pidän matematiikan opettamisesta ja tutkimisesta. Opettajana olen
+      innostava ja kannustava; haluan saada oppilaani oppimaan ja ymmärtämään
+      asioita. Olen opiskellut pedagogiikkaa Jyväskylän ammattikorkeakoulussa.
+    </p>
+    <p>
+      Ohjelmoijana ja data-analysoijana olen kiinnostunut erilaisista
+      projekteista. Työskentelen Ubuntulla, ja parhaiten osaan Pythonia ja
+      Javaa, joista on kokemusta useissa töissä. Vahvistan osaamistani opiskelemalla Jyväskylän
+      ammattikorkeakoulussa WWW-kehitystä, tavoitteenani valmistua full stack
+      -kehittäjäksi kesällä 2021. Toistaiseksi olen oppinut CSS:ää, JavaScriptiä
+      ja HTML 5:ttä. Aion myös opetella Angularia ja Node.js:ää. Aiemmissa töissä olen tutustunut PHP:hen, Joomlaan ja
+      Mamboon. Voin tehdä pieniä kotisivuprojekteja.
+    </p>
+    <h1>Tilastoja</h1>
+    <ul
+    >
+      <li>Useita tyytyväisiä asiakkaita.</li>
+      <li>Kaksi projektia liittyen tilastotieteeseen.</li>
+      <li>Yksi kilpailumatematiikan pistesija.</li>
+    </ul>
+    <h1>Osa työhistoriastani</h1>
+    <p >Koulutukseltani olen matemaatikko. Työskentelen kevytyrittäjänä
+    laskutuspalvelun kautta. Sitä kautta olen tehnyt esimerkiksi matematiikan
+    opetusta seitsemän vuotta. Olen myös tehnyt ohjelmointia muun muassa
+    Exovella, Innovaticsilla ja Tietokarhussa.</p>
+  <h1>
+    Palveluni
+  </h1><p >
+  <ul>
+    <li>
+      Matematiikka: Opetan ja tutkin
+      matematiikkaa. Olen opettanut
+      lapsia, nuoria ja aikuisia
+      peruskoulusta yliopistoon. Teen myös pääsykoevalmennusta.
+    </li>
+    <li>
+      Tilastotiede: Olen opiskellut
+      tilastotieteen
+      peruskursseja avoimessa
+      yliopistossa ja soveltanut
+      tilastotiedettä
+      ohjelmointiin.
+    </li>
+    <li>
+      Ohjelmointi: Olen kehittänyt
+      junioritasolla erilaisia
+      ohjelmistoja Javalla, HTML:llä,
+      CSS:llä, JavaScriptillä,
+      Pythonilla, C#:lla ja Cobolilla. Olen
+      kiinnostunut erilaisista
+      projekteista.
+    </li>
+  </ul>
+<h1>Hinnasto</h1>
+  <p> Teen etäopetusta hintaan 27 euroa tunnissa ja lähiopetusta hintaan 30 euroa tunnissa. Käytän laskutuspalvelua Kassavirtanen. Vaihtoehtoisesti hyväksyn maksutapoina käteisen, tilisiirron ja Mobilepayn. Huomaathan, että en ole ennakkoperintärekisterissä eikä minulla ole Y-tunnusta, joten joudut tekemään tulorekisteri-ilmoituksen. Teen kuitenkin kirjanpidolliset velvoitteet itse ja annan tarvittaessa kuitin. </p>
+<h1>Yhteydenotto</h1>
+<p>
 
-          <h2 style="margin-left: 10%; margin-right: 20%; text-align: center">
-            Minusta
-          </h2>
+Oli hauska tavata. Jäi­kö ky­syt­tä­vää? Olen mie­lel­lä­ni si­nul­le tai yri­tyk­sel­le­si avuk­si, jo­ten otat­han yh­teyt­tä, niin mie­ti­tään yh­des­sä, mi­ten voi­sin aut­taa juu­ri Si­nua. Pu­he­lin/Whats­app 050 591 4199 ja säh­kö­pos­ti Jaak­ko.J.Sep­pa­la@­gmail.­com. </p>
+<h1>Tietosuojakäytäntö 29.10.2020</h1>
+<div class="center">
 
-          <div id="temp4" style="margin-left: 10%; margin-right: 10%">
-            <p style="margin-right: 10%; clear: both; hyphens: auto">
-              Olen Jaakko Seppälä, Kuopiossa asuva, syntyperäinen helsinkiläinen
-              matemaatikko ja junioritason ohjelmoija. Valmistuin Helsingin
-              yliopiston matemaattis-luonnontieteellisestä tiedekunnasta
-              filosofian maisteriksi vuonna 2009. Kävin algebran ja topologian
-              linjan, ja tarkastelin gradussani
-              <a href="https://www.jstor.org/stable/1970573?seq=1"
-                >äärellisten kuntien alkeisteorian</a
-              >
-              ratkeavuutta, jonka James Ax todisti vuonna 1968. Pidän
-              matematiikan opettamisesta ja tutkimisesta. Opettajana olen
-              innostava ja kannustava: haluan saada oppilaani oppimaan ja
-              ymmärtämään asioita. Olen opiskellut pedagogiikkaa Jyväskylän
-              ammattikorkeakoulussa.
-            </p>
-            <p style="margin-right: 10%; hyphens: auto">
-              Ohjelmoijana ja data-analysoijana olen kiinnostunut erilaisista
-              projekteista. Työskentelen Ubuntulla, ja parhaiten osaan Pythonia
-              ja Javaa, joista on kokemusta useissa töissä. Myös R:ää olen
-              käyttänyt työssä ja vapaa-ajalla sekä tietenkin SQL:ää. Olen tehnyt erilaisia
-              ohjelmistoja, ja osaan hyödyntää matematiikkaa ja tilastotiedettä
-              data-analyysiprojekteissa. Opettelen jatkuvasti uusia keinoja
-              ratkoa yhä monimutkaisempia ohjelmointiongelmia, ja opettelen
-              ratkomaan asioita mahdollisimman yksinkertaisesti. Lisäksi minulle
-              on tärkeää kehittyä ohjelmoijana, ja kehitän siinä itseäni
-              jatkuvasti. Opiskelen Jyväskylän ammattikorkeakoulussa
-              WWW-kehitystä, tavoitteenani valmistua full stack -kehittäjäksi
-              kesällä 2021. Toistaiseksi olen oppinut CSS:ää, JavaScriptiä ja HTML 5:ttä. Aiemmissa töissä olen tutustunut PHP:hen, Joomlaan ja Mamboon. Voin tehdä pieniä kotisivuprojekteja.
-            </p>
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Tilastoja
-            </h2>
-            <ul>
-              <li>Useita tyytyväisiä asiakkaita.</li>
-              <li>Kaksi projektia liittyen tilastotieteeseen.</li>
-              <li>
-                Yksi kilpailumatematiikan
-                pistesija.
-              </li>
-            </ul>
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Osa työhistoriastani
-            </h2>
+<p class="rekisteri">Rekisterinpitäjä:
+Jaakko Seppälä
+Kanavaharjunkatu 3 A 15
+70840 Kuopio
+050 591 4199
+jaakko.j.seppala@gmail.com
 
-            <p style="margin-right: 10%">
-              Koulutukseltani olen
-              matemaatikko. Työskentelen
-              kevytyrittäjänä
-              laskutuspalvelun kautta.
-              Sitä kautta olen tehnyt esimerkiksi
-              matematiikan opetusta seitsemän vuotta.
-              Olen myös tehnyt ohjelmointia muun
-              muassa Exovella,
-              Innovaticsilla ja
-              Tietokarhussa.
-            </p>
+Kerään asiakkaan nimen ja sähköpostiosoitteen asiakkaista laskutusta varten. Henkilötietojen käsittelyn perusteena on lakisääteiset velvoitteet ja minimaalinen välttämätön tieto käyttää laskutuspalvelua.
 
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Palveluni
-            </h2>
-            <ul>
-              <li>
-                Ma&shy;te&shy;ma&shy;tiik&shy;ka: Ope&shy;tan ja tut&shy;kin
-                ma&shy;te&shy;ma&shy;tiik&shy;kaa. Olen opet&shy;ta&shy;nut
-                lap&shy;sia, nuo&shy;ria ja ai&shy;kui&shy;sia
-                pe&shy;rus&shy;kou&shy;lus&shy;ta yli&shy;o&shy;pis&shy;toon.
-              </li>
-              <li>
-                Ti&shy;las&shy;to&shy;tie&shy;de: Olen opis&shy;kel&shy;lut
-                ti&shy;las&shy;to&shy;tie&shy;teen
-                pe&shy;rus&shy;kurs&shy;se&shy;ja avoi&shy;mes&shy;sa
-                yli&shy;o&shy;pis&shy;tos&shy;sa ja so&shy;vel&shy;ta&shy;nut
-                ti&shy;las&shy;to&shy;tie&shy;det&shy;tä
-                oh&shy;jel&shy;moin&shy;tiin.
-              </li>
-              <li>
-                Oh&shy;jel&shy;moin&shy;ti: Olen ke&shy;hit&shy;tä&shy;nyt
-                ju&shy;ni&shy;o&shy;ri&shy;ta&shy;sol&shy;la eri&shy;lai&shy;sia
-                oh&shy;jel&shy;mis&shy;to&shy;ja Ja&shy;val&shy;la, HTML:llä,
-                CSS:llä, Ja&shy;va&shy;Scrip&shy;til&shy;lä,
-                Pyt&shy;honil&shy;la, C#:lla ja Cobolilla. Olen
-                kiin&shy;nostunut erilaisista
-                projekteista.
-              </li>
-            </ul>
+En tee käyttäjiä koskevia profilointeja ja automaattisia
+päätöksiä.
 
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Hinnasto
-            </h2>
-            <p>
-              Teen etäopetusta hintaan 30 euroa
-              tunnissa ja lähiopetusta
-              hintaan 35 euroa tunnissa. Käytän
-              laskutuspalvelua Kassavirtanen. Vaihtoehtoisesti hyväksyn maksutapoina käteisen, tilisiirron ja Mobilepayn. 
-              Huomaathan, että en ole ennakkoperintärekisterissä eikä minulla ole Y-tunnusta, 
-              joten joudut tekemään tulorekisteri-ilmoituksen. Teen kuitenkin kirjanpidolliset velvoitteet itse ja annan tarvittaessa kuitin.
-            </p>
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Yh&shy;tey&shy;den&shy;ot&shy;to
-            </h2>
-            <p>
-              Jäi&shy;kö ky&shy;syt&shy;tä&shy;vää? Olen
-              mie&shy;lel&shy;lä&shy;ni si&shy;nul&shy;le tai
-              yri&shy;tyk&shy;sel&shy;le&shy;si avuk&shy;si, jo&shy;ten
-              otat&shy;han yh&shy;teyt&shy;tä, niin mie&shy;ti&shy;tään
-              yh&shy;des&shy;sä, mi&shy;ten voi&shy;sin aut&shy;taa juu&shy;ri
-              Si&shy;nua. Pu&shy;he&shy;lin/Whats&shy;app 050 591 4199 ja
-              säh&shy;kö&shy;pos&shy;ti
-              Jaak&shy;ko.J.Sep&shy;pa&shy;la@&shy;gmail.&shy;com.
-            </p>
-            <h2 style="margin-left: 10%; margin-right: 10%; text-align: center">
-              Tietosuojakäytäntö 21.10.2020
-            </h2>
-            <p style="white-space: pre-wrap;">
-              Rekisterinpitäjä:
-              Jaakko Seppälä
-              Kanavaharjunkatu 3 A 15
-              70840 Kuopio
-              050 591 4199
-              jaakko.j.seppala@gmail.com
+Henkilötietojasi vastaanottavat
+– minä ja laskutuspalvelu Kassavirtanen
+– sinä itse, jos keskustelemme esim. sähköpostitse
 
-              Kerään asiakkaan nimen ja sähköpostiosoitteen asiakkaista laskutusta varten.
-              Henkilötietojen käsittelyn perusteena on lakisääteiset velvoitteet ja 
-              minimaalinen välttämät tieto käyttää laskutuspalvelua.
+Säilytämme henkilötietojasi:
+– sähköpostiarkistossa seitsemän vuoden ajan
+– kirjanpitoaineistossa seitsemän vuoden ajan.
 
-              En tee käyttäjiä koskevia profilointeja ja automaattisia
-              päätöksiä.
-              
-              Henkilötietojasi vastaanottavat
-              – minä ja laskutuspalvelu Kassavirtanen
-              – sinä itse, jos keskustelemme esim. sähköpostitse
-              
-              Säilytämme henkilötietojasi:
-              – sähköpostiarkistossa seitsemän vuoden ajan
-              – kirjanpitoaineistossa seitsemän vuoden ajan.
-              
-              Sinulla on seuraavat oikeudet:
-              – oikeus tarkastaa itseäsi koskevat henkilötiedot
-              – oikeus tietojen oikaisemiseen
-              – oikeus käsittelyn rajoittamiseen
-              – oikeus vastustaa käsittelyä
-              – oikeus peruuttaa suostumus
-              – oikeus tehdä valitus valvontaviranomaiselle
-              
-              Huomioithan, että sinulla on ”oikeus tulla unohdetuksi” vain, jos
-              meillä ei ole lakisääteisiä velvoitteita jatkaa henkilötietojesi
-              käsittelyä.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+Sinulla on seuraavat oikeudet:
+– oikeus tarkastaa itseäsi koskevat henkilötiedot
+– oikeus tietojen oikaisemiseen
+– oikeus käsittelyn rajoittamiseen
+– oikeus vastustaa käsittelyä
+– oikeus peruuttaa suostumus
+– oikeus tehdä valitus valvontaviranomaiselle
+
+Huomioithan, että sinulla on ”oikeus tulla unohdetuksi” vain, jos meillä ei ole lakisääteisiä velvoitteita jatkaa henkilötietojesi käsittelyä.</p>
+</div>
 </html>
